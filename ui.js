@@ -12,5 +12,7 @@ class UI {
         this.confrimAll = document.querySelector(".confrim-all-elements"),
         this.printPage = document.querySelector(".get-print-page"),
         this.errorContainer = document.querySelector(".errors-container")
+        this.deleteBtn = document.querySelectorAll(".delete")
+        // this.stylizedPrint = document.querySelectorAll(".container-items__item > .name-pics");
     }
 }
