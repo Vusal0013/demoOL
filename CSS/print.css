@@ -1,0 +1,8 @@
+@media only print {
+    .container-items__item {
+        border-bottom: 1px solid black;
+    }
+    .container-items__item>.name-pics {
+        width: 100%;
+    }
+}
