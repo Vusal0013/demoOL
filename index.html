@@ -3,13 +3,13 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Order List</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="print.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/print.css">
 </head>
 <body>
     <div class="container">
         <div class="errors-container"></div>
-        <button class="back">Back</button>
+        <button class="back hide">Back</button>
         <form id="inputs-form" action="order-product">
             <button id="reset" type="reset">Reset</button>
             <input type="text" list="product-list" name="product" id="product" placeholder="Product" />
@@ -21,13 +21,13 @@
         <div class="container-items">
         </div>
         <button class="confrim-all-elements">Confrim</button>
-        <button class="get-print-page">Print</button>
+        <button class="get-print-page hide">Print</button>
     </div>
-<script src="products.js"></script>
-<script src="ui.js"></script>
-<script src="addNewItems.js"></script>
-<script src="script.js"></script>
-<script src="deleteItem.js"></script>
-<script src="print.js"></script>
+<script src="JS/ui.js"></script>
+<script src="JS/products.js"></script>
+<script src="JS/deleteItem.js"></script>
+<script src="JS/addNewItems.js"></script>
+<script src="JS/script.js"></script>
+<script src="JS/print.js"></script>
 </body>
 </html>
