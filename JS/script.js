@@ -46,6 +46,7 @@ ui.inputProductPcs.addEventListener("input", () => {
     ui.inputProductPcs.value = ui.inputProductPcs.value.slice(0,5)
     ui.inputProductPcs.value = ui.inputProductPcs.value.replace(".", "")
 })
+
 addToDatalist(products);
 
 addProductsToProductList(ui.confrimProduct, ui.inputDataOfDatalist, ui.inputProductPcs, ui.containerListItems);

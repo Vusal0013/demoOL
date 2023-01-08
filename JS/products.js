@@ -198,6 +198,7 @@ let products = {
 };
 let productList = [];
 
+
 // products obyektindeki elementleri <datalist> daxiline  elave edirik
 // (inputboxa focus oldugumuz zaman elementler gorunun ve tapmaq asan olsun deye)
 const addToDatalist = (productsIsObj) => {

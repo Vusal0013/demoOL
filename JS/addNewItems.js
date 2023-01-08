@@ -12,6 +12,7 @@ function addProductsToProductList(confrim, itemName, itemPcs, containerListEleme
                 confrim.click();
         });
 
+        
     confrim.addEventListener("click",
         () => {
             let itemId = 0;
