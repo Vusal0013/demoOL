@@ -22,6 +22,7 @@ const windowsOnloadData = () => {
             ui.resetBtn.classList.remove("hide")
             ui.confrimAll.classList.remove("hide")
         });
+
     } else {
         html = `<h1 style="text-align:center"> Sifariş daxil edin </h1>`;
         ui.resetBtn.classList.add("hide")
@@ -30,7 +31,11 @@ const windowsOnloadData = () => {
 
     return html;
 };
+
 ui.containerListItems.innerHTML = windowsOnloadData();
+
+const deleteBtn = document.querySelectorAll(".delete")
+const stylizedPrint = document.querySelectorAll(".container-items__item > .name-pics")
 
 
 ui.resetBtn.addEventListener("click", () => {
@@ -40,7 +45,7 @@ ui.resetBtn.addEventListener("click", () => {
 })
 
 ui.inputProductPcs.addEventListener("input", () => {
-    if( ui.inputProductPcs.value.startsWith("0") || ui.inputProductPcs.value.startsWith(".")){
+    if( ui.inputProductPcs.value.startsWith("0")){
         ui.inputProductPcs.value = ui.inputProductPcs.value.slice(1)
     }
     ui.inputProductPcs.value = ui.inputProductPcs.value.slice(0,5)
@@ -52,10 +57,14 @@ addToDatalist(products);
 addProductsToProductList(ui.confrimProduct, ui.inputDataOfDatalist, ui.inputProductPcs, ui.containerListItems);
 
 ui.confrimAll.addEventListener("click", () => {
-    ui.containerInputs.classList.add("hide")
-    ui.confrimAll.classList.add("hide")
-    ui.printPage.classList.remove("hide")
-    ui.backBtn.classList.remove("hide")
+    ui.containerInputs.classList.add("hide");
+    ui.confrimAll.classList.add("hide");
+    ui.printPage.classList.remove("hide");
+    ui.backBtn.classList.remove("hide");
+    console.log(deleteBtn)
+    console.log(stylizedPrint)
+    deleteBtn.forEach(item => item.classList.add("hide"));
+    stylizedPrint.forEach(item => item.classList.add("w100"));
 })
 
 ui.backBtn.addEventListener("click", () => {
@@ -63,4 +72,6 @@ ui.backBtn.addEventListener("click", () => {
     ui.confrimAll.classList.remove("hide")
     ui.printPage.classList.add("hide")
     ui.backBtn.classList.add("hide")
+    deleteBtn.forEach(item => item.classList.remove("hide"));
+    stylizedPrint.forEach(item => item.classList.remove("w100"));
 });

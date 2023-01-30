@@ -1,24 +1,23 @@
 let products = {
     dvr: [
-        "DS-7104HGHI-F1",
         "DS-7104HGHI-K1",
         "DS-7104HQHI-K1",
         "DS-7108HQHI-K1",
         "DS-7108HGHI-K1",
         "DS-7204HQHI-K1",
         "DS-7204HQHI-K1 (4 audio)",
-        "DS-7204HQHI-K1/P (PoC)",
+        "DS-7204HQHI-K1/P",
         "DS-7204HTHI-K1",
         "DS-7208HTHI-K2",
-        "DS-7216HQHI-K2",
-        "DS-7216HQHI-K2 (Audio)",
+        "DS-7216HQHI-M2/S",
+        "DS-7216HQHI-M2/S (Audio)",
         "DS-7216HUHI-M2/S",
-        "DS-7232HQHI-K2",
+        "DS-7232HQHI-M2/S",
         "IDS-7204HQHI-M1/S",
         "IDS-7204HUHI-M1/S",
         "IDS-7208HQHI-M1/S",
         "IDS-7208HUHI-M2/S",
-        "DS-7116HQHI-K1",
+        "DS-7116HQHI-M2/S",
         "DS-7204HQHI-K1/P 4 audio",
     ],
     nvr: [
@@ -48,7 +47,6 @@ let products = {
         "DS-2CD1043G0-I (4 mm)",
         "DS-2CD1323G0-I (2.8 mm)",
         "DS-2CD1323G0-IUF (2.8 mm)",
-        "DS-2CD1343G0-I (2.8 mm)",
         "DS-2CD1343G0-I (2.8 mm)",
         "DS-2CD1623G0-IZ",
         "DS-2CD1643G0-IZ",
@@ -94,7 +92,7 @@ let products = {
         "DS-2CE12DF3T-F (3.6 mm)",
         "DS-2CE12DFT-PIRXOF (3.6 mm)",
         "DS-2CE12HFT-F (3.6 mm)",
-        "DS-2CE16D0T-IR (2.8mm)",
+        "DS-2CE16D0T-IR (2.8 mm)",
         "DS-2CE16D0T-IR (3.6 mm)",
         "DS-2CE16D0T-ITFS (3.6 mm)",
         "DS-2CE16D3T-IT3F (2.8 mm)",
@@ -114,6 +112,7 @@ let products = {
         "DS-2CE12HFT-F28 (2.8 mm)",
         "DS-2CE16D0T-IT3F (3.6 mm)",
         "DS-2CE16D0T-ITPFS",
+        "DS-2CE16D0T-IRPE (2.8 mm)",
         "DS-2CE17D0T-IT3F (3.6 mm)",
         "DS-2CE17D0T-IT5F (3.6 mm)",
         "DS-2CE17H0T-IT5F (3.6 mm)",
@@ -150,8 +149,8 @@ let products = {
         "DS-KH6320-WTE1 (White)",
         "DS-KH6320-WTE1 (Black)",
         "DS-KH8350-WTE1",
-        "Hikvision DS-KH8520-WTE1 (White)",
-        "Hikvision DS-KH8520-WTE1 (Black)",
+        "DS-KH8520-WTE1 (White)",
+        "DS-KH8520-WTE1 (Black)",
         "DS-KIS205T (White)",
         "DS-KIS205T (Black)",
         "DS-KV6103-PE1 (B)"
@@ -168,8 +167,8 @@ let products = {
         "DS-K1T801-M",
         "DS-K1T802-E",
         "DS-K1T802-M",
-        "K1T804AMF",
-        "K1T804AEF",
+        "DS-K1T804AMF",
+        "DS-K1T804AEF",
         "DS-K2602P",
         "DS-K2604P",
     ],
@@ -185,19 +184,25 @@ let products = {
         "2+1 (500m)",
         "4+1 (500m)",
         "CAT5E FTP (305m)",
+        "CAT5E FTP (500m)",
         "CAT5E UTP (305m)",
         "CAT5E UTP (500m)",
-        "CAT6 UTP (305m)"
+        "CAT6 FTP (305m)",
+        "CAT6 FTP (500m)",
+        "CAT6 UTP (305m)",
+        "CAT6 UTP (500m)",
     ],
     ups: [
         "UPS 600",
         "UPS 800",
         "UPS 1000",
         "UPS 1500",
-        "UPS 2000"]
+        "UPS 2000"],
+    ptz:[
+        "DS-5432IWD-AE (S5)"
+    ]
 };
 let productList = [];
-
 
 // products obyektindeki elementleri <datalist> daxiline  elave edirik
 // (inputboxa focus oldugumuz zaman elementler gorunun ve tapmaq asan olsun deye)

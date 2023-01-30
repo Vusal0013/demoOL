@@ -1,9 +1,19 @@
 @media only print {
-    .container-items__item {
+    .container-items{
+        width: 100%;
+    }
+    .container-items__item:nth-child(odd){
+        background-color: #fff;
+    }
+    .container-items__item>.name-pics{
+        padding: 0;
         border-bottom: 1px solid black;
     }
+
     .container-items__item>.name-pics {
         width: 100%;
     }
-    
+    .delete{
+        display: none;
+    }
 }

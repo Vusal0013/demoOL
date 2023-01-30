@@ -1,7 +1,6 @@
 // delete items func
 
 
-
 // const deleteBtn = document.querySelectorAll(".delete");
 const deleteItem = (delValue) => {
     productList = productList.filter(product => product.id != delValue);

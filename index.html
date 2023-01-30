@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="CSS/print.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container"> 
         <div class="errors-container"></div>
-        <button class="back hide">Back</button>
+        <button class="back hide btn">Back</button>
         <form id="inputs-form" action="order-product">
-            <button id="reset" type="reset">Reset</button>
+            <button class="btn clear-all" id="reset" type="reset">Reset</button>
             <input type="text" list="product-list" name="product" id="product" placeholder="Product" />
             <input type="number" name="product-pics" id="product-pics" placeholder="00" />
-            <input type="button" name="confrim-product" id="confrim-product" value="OK" />
+            <input type="button" name="confrim-product" id="confrim-product" class="btn confrim-product" value="OK" />
             <datalist id="product-list">
             </datalist> 
         </form>
         <div class="container-items">
         </div>
-        <button class="confrim-all-elements">Confrim</button>
-        <button class="get-print-page hide">Print</button>
+        <button class="confrim-all-elements btn">Confrim</button>
+        <button class="get-print-page hide btn">Print</button>
     </div>
 <script src="JS/ui.js"></script>
 <script src="JS/products.js"></script>
