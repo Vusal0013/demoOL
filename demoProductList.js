@@ -196,3 +196,4 @@ let products = {
         "UPS 1500",
         "UPS 2000"]
 };
+

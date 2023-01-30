@@ -1,4 +1,7 @@
+
 // inputBoxlara daxil etdiyimiz deyeri O buttonu ile ve ya Enter vasitesile daxil etmek ucun
+
+
 function addProductsToProductList(confrim, itemName, itemPcs, containerListElement) {
 
     itemName.addEventListener("keypress", (e) => {
@@ -12,7 +15,7 @@ function addProductsToProductList(confrim, itemName, itemPcs, containerListEleme
                 confrim.click();
         });
 
-        
+    
     confrim.addEventListener("click",
         () => {
             let itemId = 0;
@@ -32,7 +35,7 @@ function addProductsToProductList(confrim, itemName, itemPcs, containerListEleme
                         localStorage.setItem('productList', JSON.stringify(productList));
         
                         html = windowsOnloadData();
-        
+                      
                         containerListElement.innerHTML = html;
                         itemName.value = "";
                         itemPcs.value = "";

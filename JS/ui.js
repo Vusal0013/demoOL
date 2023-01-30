@@ -13,4 +13,4 @@ class UI {
         this.printPage = document.querySelector(".get-print-page"),
         this.errorContainer = document.querySelector(".errors-container")
     }
-};
+}; 
